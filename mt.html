@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="intro">
+        <h1>Housing in Beijing</h1>
+        <p class="main">Let's start explore the housing in Beijing!</p>
+      </div>
+
+      <div id="explor">
+          <div id="floor-box">
+            <label class="floor">Number Of Floor</label>
+            <button class="floor-button">Explore</button>
+          </div>
+          <br>
+          <div id="area-box"> 
+            <label class="area">Housing Area</label>
+            <button class="area-button">Explore</button>
+          </div>
+          <br>
+          <div id="numbed-box">
+            <label class="numbed">Number of Bedrooms</label>
+            <button class="numbed-button">Explore</button>
+          </div>
+          <br>
+          <div id="price-box">
+            <label class="price">Total Price</label>
+            <button class="price-button">Explore</button>
+          </div>
+          <br>
+          <div id="year-box">
+            <label class="year">Built Year</label>
+            <button class="year-button">Explore</button>
+          </div>
+      </div>
+
+      <br>
+
+      <!-- <div id="test">
+        <label for="sel">Filter</label>
+        <select id="sel" type="text">
+            <option value="All">All</option>
+        </select>
+      </div> -->
+
+      <br>
+      <br>
+      <button class="back">Back</button>
+
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    
+    <!-- Legend -->
+    <div class="numbed-legend">
+      <br>
+    <b>Number of Bedrooms</b>
+    <ul>
+      <div class="legend-box" style="background: #FFD2A4; border: 2px #FF8912" id="one"></div>
+      <p class="legend-text">1</p>
+      <div class="legend-box" style="background: #FFC4FA; border: 2px #FF70F2" id="two"></div>
+      <p class="legend-text">2</p>
+      <div class="legend-box" style="background: #FFEE92; border: 2px #FFD500" id="three"></div>
+      <p class="legend-text">3</p>
+      <div class="legend-box" style="background: #cc99ff; border: 2px #9933ff" id="four"></div>
+      <p class="legend-text">4</p>
+    </ul>
+    </div>
+
+    <!-- Legend2 -->
+    <div class="price-legend">
+      <br>
+    <b>Price</b>
+    <ul>
+      <div class="legend-box" style="background: #FA8072; border: 2px #FA8072" id="200"></div>
+      <p class="legend-text"> less than 200 </p>
+      <div class="legend-box" style="background: #FF6347; border: 2px #FF6347" id="400"></div>
+      <p class="legend-text"> 200-400</p>
+      <div class="legend-box" style="background: #DC143C; border: 2px #DC143C" id="600"></div>
+      <p class="legend-text"> 400-600</p>
+      <div class="legend-box" style="background: #B22222; border: 2px #B22222" id="800"></div>
+      <p class="legend-text"> 600-800</p>
+      <div class="legend-box" style="background: #FD8D3C; border: 2px #FD8D3C" id="1000"></div>
+      <p class="legend-text"> 800-1000</p>
+    </ul>
+    </div>
+
+    <!-- Legend3 -->
+    <div class="year-legend">
+      <br>
+    <b>Built Year</b>
+    <ul>
+      <div class="legend-box" style="background: #B5FFEC; border: 2px #B5FFEC" id="1990"></div>
+      <p class="legend-text"> -1990 </p>
+      <div class="legend-box" style="background: #92EEFF; border: 2px #92EEFF" id="1995"></div>
+      <p class="legend-text"> 1990-1995</p>
+      <div class="legend-box" style="background: #6CCFFF; border: 2px #6CCFFF" id="2000"></div>
+      <p class="legend-text"> 1995-2000</p>
+      <div class="legend-box" style="background: #6CA7FF; border: 2px #6CA7FF" id="2005"></div>
+      <p class="legend-text"> 2000-2005</p>
+      <div class="legend-box" style="background: #5471FF; border: 2px #5471FF" id="2010"></div>
+      <p class="legend-text"> 2005-2010</p>
+      <div class="legend-box" style="background: #7644FF; border: 2px #7644FF" id="2015"></div>
+      <p class="legend-text"> 2010-2015</p>
+    </ul>
+    </div>
+    
+
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/mt.js"></script>
+  </body>
+</html>
